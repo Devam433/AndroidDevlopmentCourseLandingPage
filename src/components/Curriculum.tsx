@@ -64,38 +64,38 @@ const modules = [
       "API Documentation"
     ]
   },
-  {
-    id: "database",
-    title: "Database Integration",
-    icon: <Database className="h-5 w-5" />,
-    weeks: "Weeks 9-10",
-    description: "Master data storage and retrieval techniques",
-    topics: [
-      "Database Design Principles",
-      "SQL Fundamentals with PostgreSQL",
-      "NoSQL with MongoDB",
-      "ORM/ODM Tools",
-      "Data Modeling & Relationships",
-      "Performance Optimization",
-      "Data Validation & Sanitization"
-    ]
-  },
-  {
-    id: "deployment",
-    title: "Deployment & Beyond",
-    icon: <Globe className="h-5 w-5" />,
-    weeks: "Weeks 11-12",
-    description: "Take your applications to production",
-    topics: [
-      "CI/CD Pipelines",
-      "Cloud Deployment (AWS/Vercel)",
-      "Containerization with Docker",
-      "Monitoring & Logging",
-      "Security Best Practices",
-      "Performance Optimization",
-      "Final Project Implementation"
-    ]
-  },
+  // {
+  //   id: "database",
+  //   title: "Database Integration",
+  //   icon: <Database className="h-5 w-5" />,
+  //   weeks: "Weeks 9-10",
+  //   description: "Master data storage and retrieval techniques",
+  //   topics: [
+  //     "Database Design Principles",
+  //     "SQL Fundamentals with PostgreSQL",
+  //     "NoSQL with MongoDB",
+  //     "ORM/ODM Tools",
+  //     "Data Modeling & Relationships",
+  //     "Performance Optimization",
+  //     "Data Validation & Sanitization"
+  //   ]
+  // },
+  // {
+  //   id: "deployment",
+  //   title: "Deployment & Beyond",
+  //   icon: <Globe className="h-5 w-5" />,
+  //   weeks: "Weeks 11-12",
+  //   description: "Take your applications to production",
+  //   topics: [
+  //     "CI/CD Pipelines",
+  //     "Cloud Deployment (AWS/Vercel)",
+  //     "Containerization with Docker",
+  //     "Monitoring & Logging",
+  //     "Security Best Practices",
+  //     "Performance Optimization",
+  //     "Final Project Implementation"
+  //   ]
+  // },
 ];
 
 const Curriculum = () => {
@@ -137,7 +137,7 @@ const Curriculum = () => {
 
         <div className="animate-on-scroll">
           <Tabs defaultValue="fundamentals" className="w-full">
-            <TabsList className="w-full max-w-3xl mx-auto grid grid-cols-2 md:grid-cols-5 mb-8">
+          <TabsList className="w-full overflow-y-auto h-16 max-w-3xl mx-auto flex flex-wrap justify-center gap-4 mb-8">
               {modules.map((module) => (
                 <TabsTrigger 
                   key={module.id} 

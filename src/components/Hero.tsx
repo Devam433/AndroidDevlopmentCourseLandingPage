@@ -50,7 +50,7 @@ const Hero = () => {
           </h1>
           
           <p className="text-lg md:text-xl text-foreground/80 animate-on-scroll max-w-xl text-balance">
-            Join our comprehensive course designed by industry experts to build professional, responsive web applications that stand out.
+            Join our comprehensive course designed by experts to build professional, responsive web applications that stand out.
           </p>
           
           <div className="flex flex-wrap gap-4 animate-on-scroll">
@@ -64,7 +64,7 @@ const Hero = () => {
           
           <div className="pt-4 grid grid-cols-3 gap-4 animate-on-scroll">
             <div className="text-center">
-              <div className="font-bold text-3xl text-resolution">12</div>
+              <div className="font-bold text-3xl text-resolution">24</div>
               <div className="text-sm text-foreground/70">Weeks</div>
             </div>
             <div className="text-center">

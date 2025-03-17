@@ -5,9 +5,7 @@ import { useEffect } from "react";
 
 const benefits = [
   "Hands-on project-based learning",
-  "Expert instructors with industry experience",
-  "Job placement assistance and career coaching",
-  "Flexible learning options (full-time or part-time)",
+  "Access to modern computer lab",
   "Access to exclusive developer community",
   "Certificate of completion"
 ];
@@ -47,7 +45,7 @@ const CallToAction = () => {
                 Take the First Step Toward Your New Career
               </h2>
               <p className="text-white/90 text-lg mb-8">
-                Enrollment for our next cohort is now open. Secure your spot today and begin your journey to becoming a professional web developer.
+                Enrollment is now open. Secure your spot today and begin your journey to becoming a professional web developer.
               </p>
               
               <ul className="space-y-3 mb-8">
@@ -97,21 +95,28 @@ const CallToAction = () => {
             <div className="bg-white p-6 rounded-xl shadow-sm border border-gray-100">
               <h3 className="text-xl font-display font-semibold mb-3">What is the time commitment?</h3>
               <p className="text-foreground/70">
-                Full-time students should expect to dedicate 40+ hours per week. Part-time options require 20-25 hours weekly over a longer period.
+                Students should expect to dedicate alteast 30+ hours per week apart from the classes. Part-time options require atleast 15-20 hours weekly over a longer period.
               </p>
             </div>
             
-            <div className="bg-white p-6 rounded-xl shadow-sm border border-gray-100">
+            {/* <div className="bg-white p-6 rounded-xl shadow-sm border border-gray-100">
               <h3 className="text-xl font-display font-semibold mb-3">Is there financial assistance available?</h3>
               <p className="text-foreground/70">
                 Yes, we offer various payment plans, scholarships, and income share agreements. Our admissions team can help find the right option for you.
               </p>
-            </div>
+            </div> */}
             
             <div className="bg-white p-6 rounded-xl shadow-sm border border-gray-100">
               <h3 className="text-xl font-display font-semibold mb-3">What kind of support will I receive?</h3>
               <p className="text-foreground/70">
                 Students receive mentorship from experienced developers, code reviews, career coaching, and lifetime access to our alumni network and resources.
+              </p>
+            </div>
+
+            <div className="bg-white p-6 rounded-xl shadow-sm border border-gray-100">
+              <h3 className="text-xl font-display font-semibold mb-3">Does this course includes building projects?</h3>
+              <p className="text-foreground/70">
+                This course is heavely focused on project based learning where students will actively engage in building projects and solving real word problems.
               </p>
             </div>
           </div>

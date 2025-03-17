@@ -44,7 +44,7 @@ const Footer = () => {
             </ul>
           </div>
           
-          <div>
+          {/* <div>
             <h3 className="font-display font-semibold text-lg mb-6">Resources</h3>
             <ul className="space-y-3">
               {["Blog", "Career Support", "Alumni Network", "Free Tutorials", "Student Handbook", "Partnership"].map((item, index) => (
@@ -55,7 +55,7 @@ const Footer = () => {
                 </li>
               ))}
             </ul>
-          </div>
+          </div> */}
           
           <div>
             <h3 className="font-display font-semibold text-lg mb-6">Contact Us</h3>
@@ -63,16 +63,20 @@ const Footer = () => {
               <li className="flex items-start">
                 <MapPin className="h-5 w-5 mr-3 mt-0.5 text-celestial" />
                 <span className="text-white/80">
-                  123 Tech Avenue, San Francisco, CA 94107, USA
+                  Koachgaon, Biswanath Chariali, 784179, Assam, India
                 </span>
               </li>
               <li className="flex items-center">
                 <Phone className="h-5 w-5 mr-3 text-celestial" />
-                <span className="text-white/80">+1 (555) 123-4567</span>
+                <span className="text-white/80">+91 6002113161</span>
               </li>
               <li className="flex items-center">
                 <Mail className="h-5 w-5 mr-3 text-celestial" />
-                <span className="text-white/80">info@webdevmaster.com</span>
+                <div className="flex flex-col">
+                <p className="text-white/80">smartskillsacademy24@gmail.com</p>
+                <p className="text-white/80">www.smartskills.net.in</p>
+                </div>
+
               </li>
             </ul>
           </div>
