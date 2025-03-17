@@ -43,9 +43,9 @@ const Navbar = () => {
           className="flex items-center space-x-2 text-resolution hover:opacity-80 transition-opacity"
         >
           <div className="w-10 h-10 rounded-lg bg-gradient-to-br from-celestial to-resolution flex items-center justify-center">
-            <span className="text-white font-bold text-xl">W</span>
+            <span className="text-white font-bold text-xl">SM</span>
           </div>
-          <span className="text-lg md:text-xl font-display font-semibold">WebDevMaster</span>
+          <span className="text-lg md:text-xl font-display font-semibold">SmartSkillsAcademy</span>
         </a>
 
         {/* Desktop Navigation */}
