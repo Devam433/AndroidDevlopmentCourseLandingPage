@@ -1,37 +1,37 @@
 
-import { CheckCircle, Code, Database, Figma, Layout, Laptop, Server, Terminal, Zap } from "lucide-react";
+import { CheckCircle, Smartphone, Code, Layers, Zap, Share2, Database, Globe } from "lucide-react";
 import { useEffect } from "react";
 
 const features = [
   {
-    title: "Frontend Development",
-    description: "Master HTML, CSS, JavaScript, and modern frameworks like React to build beautiful user interfaces.",
-    icon: <Layout className="h-12 w-12 text-celestial" />,
+    title: "Cross-Platform Development",
+    description: "Build once and deploy to both Android and iOS platforms, saving time and resources.",
+    icon: <Smartphone className="h-12 w-12 text-celestial" />,
   },
   {
-    title: "Backend Development",
-    description: "Build robust server-side applications with Node.js, Express, and learn database integration.",
-    icon: <Server className="h-12 w-12 text-resolution" />,
+    title: "Native Performance",
+    description: "Create apps with near-native performance using React Native's optimized architecture.",
+    icon: <Zap className="h-12 w-12 text-resolution" />,
   },
   {
-    title: "Responsive Design",
-    description: "Create websites that look great on any device with modern CSS techniques and frameworks.",
-    icon: <Laptop className="h-12 w-12 text-ruddy" />,
+    title: "Component-Based UI",
+    description: "Design beautiful interfaces with reusable components and modern styling approaches.",
+    icon: <Layers className="h-12 w-12 text-ruddy" />,
   },
   {
-    title: "Database Management",
-    description: "Learn SQL and NoSQL databases to store, retrieve, and manage application data effectively.",
-    icon: <Database className="h-12 w-12 text-selective" />,
+    title: "Native APIs Integration",
+    description: "Access device features like camera, GPS, and notifications with React Native bridges.",
+    icon: <Share2 className="h-12 w-12 text-selective" />,
   },
   {
-    title: "API Development",
-    description: "Design and implement RESTful APIs to enable seamless communication between systems.",
-    icon: <Code className="h-12 w-12 text-celestial" />,
+    title: "State Management",
+    description: "Learn effective state management techniques using Redux, Context API, and more.",
+    icon: <Database className="h-12 w-12 text-celestial" />,
   },
   {
-    title: "DevOps Basics",
-    description: "Introduction to deployment, version control, and continuous integration for web applications.",
-    icon: <Terminal className="h-12 w-12 text-rust" />,
+    title: "App Deployment",
+    description: "Master the process of publishing your apps to the Google Play Store and App Store.",
+    icon: <Globe className="h-12 w-12 text-rust" />,
   },
 ];
 
@@ -65,10 +65,10 @@ const Features = () => {
             Comprehensive curriculum
           </div>
           <h2 className="text-3xl md:text-4xl font-display font-bold animate-on-scroll">
-            Everything You Need to Become a <span className="text-celestial">Full Stack Developer</span>
+            Everything You Need to Become a <span className="text-celestial">Mobile App Developer</span>
           </h2>
           <p className="text-lg text-foreground/70 max-w-2xl mx-auto animate-on-scroll">
-            Our course covers all essential aspects of modern web development, giving you the skills to build complete web applications.
+            Our course covers all essential aspects of modern React Native development, giving you the skills to build complete mobile applications.
           </p>
         </div>
 
@@ -92,7 +92,7 @@ const Features = () => {
               <h3 className="text-2xl font-display font-semibold">Industry-Relevant Skillset</h3>
               <p className="opacity-90">Our curriculum is continuously updated to match industry standards and employer demands.</p>
               <ul className="space-y-2">
-                {["Modern JavaScript (ES6+)", "React & State Management", "Node.js Backend Development", "Database Design & Integration"].map((item, index) => (
+                {["Modern JavaScript & React", "Native Device Integration", "UI/UX for Mobile Apps", "App Store Deployment"].map((item, index) => (
                   <li key={index} className="flex items-center">
                     <CheckCircle className="h-5 w-5 mr-2 flex-shrink-0" />
                     <span>{item}</span>
@@ -103,8 +103,8 @@ const Features = () => {
             <div className="relative">
               <div className="absolute inset-0 bg-black/10 rounded-lg transform rotate-3"></div>
               <img 
-                src="https://images.unsplash.com/photo-1461749280684-dccba630e2f6?crop=entropy&cs=tinysrgb&fit=max&fm=jpg&ixid=MnwxfDB8MXxyYW5kb218MHx8fHx8fHx8MTY5MzgzMDc2Mg&ixlib=rb-4.0.3&q=80&utm_campaign=api-credit&utm_medium=referral&utm_source=unsplash_source&w=1080" 
-                alt="Programming on a laptop" 
+                src="https://images.unsplash.com/photo-1551650975-87deedd944c3?crop=entropy&cs=tinysrgb&fit=max&fm=jpg&ixid=MnwxfDB8MXxyYW5kb218MHx8fHx8fHx8MTY5MzgzMDc2Mg&ixlib=rb-4.0.3&q=80&utm_campaign=api-credit&utm_medium=referral&utm_source=unsplash_source&w=1080" 
+                alt="Mobile app development" 
                 className="rounded-lg shadow-lg relative z-10 w-full h-auto"
                 loading="lazy"
               />

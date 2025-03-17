@@ -5,7 +5,7 @@ import { useEffect } from "react";
 
 const benefits = [
   "Hands-on project-based learning",
-  "Access to modern computer lab",
+  "Access to mobile testing devices",
   "Access to exclusive developer community",
   "Certificate of completion"
 ];
@@ -45,7 +45,7 @@ const CallToAction = () => {
                 Take the First Step Toward Your New Career
               </h2>
               <p className="text-white/90 text-lg mb-8">
-                Enrollment is now open. Secure your spot today and begin your journey to becoming a professional web developer.
+                Enrollment is now open. Secure your spot today and begin your journey to becoming a professional Android developer.
               </p>
               
               <ul className="space-y-3 mb-8">
@@ -69,8 +69,8 @@ const CallToAction = () => {
             
             <div className="hidden md:block relative h-full animate-on-scroll">
               <img 
-                src="https://images.unsplash.com/photo-1498050108023-c5249f4df085?crop=entropy&cs=tinysrgb&fit=max&fm=jpg&ixid=MnwxfDB8MXxyYW5kb218MHx8fHx8fHx8MTY5MzgzMDc2Mg&ixlib=rb-4.0.3&q=80&utm_campaign=api-credit&utm_medium=referral&utm_source=unsplash_source&w=1080" 
-                alt="Developer working on code" 
+                src="https://images.unsplash.com/photo-1555774698-0b77e0d5fac6?crop=entropy&cs=tinysrgb&fit=max&fm=jpg&ixid=MnwxfDB8MXxyYW5kb218MHx8fHx8fHx8MTY5MzgzMDc2Mg&ixlib=rb-4.0.3&q=80&utm_campaign=api-credit&utm_medium=referral&utm_source=unsplash_source&w=1080" 
+                alt="Developer working on mobile app" 
                 className="object-cover h-full w-full"
                 loading="lazy"
               />
@@ -88,35 +88,28 @@ const CallToAction = () => {
             <div className="bg-white p-6 rounded-xl shadow-sm border border-gray-100">
               <h3 className="text-xl font-display font-semibold mb-3">Do I need prior coding experience?</h3>
               <p className="text-foreground/70">
-                No prior experience is required. Our curriculum is designed to take you from the basics to advanced concepts at a manageable pace.
+                Basic JavaScript knowledge is recommended, but our curriculum includes refresher modules to help beginners get up to speed.
               </p>
             </div>
             
             <div className="bg-white p-6 rounded-xl shadow-sm border border-gray-100">
               <h3 className="text-xl font-display font-semibold mb-3">What is the time commitment?</h3>
               <p className="text-foreground/70">
-                Students should expect to dedicate alteast 30+ hours per week apart from the classes. Part-time options require atleast 15-20 hours weekly over a longer period.
+                Students should expect to dedicate at least 20-25 hours per week to classes, projects, and self-study for optimal learning outcomes.
               </p>
             </div>
-            
-            {/* <div className="bg-white p-6 rounded-xl shadow-sm border border-gray-100">
-              <h3 className="text-xl font-display font-semibold mb-3">Is there financial assistance available?</h3>
-              <p className="text-foreground/70">
-                Yes, we offer various payment plans, scholarships, and income share agreements. Our admissions team can help find the right option for you.
-              </p>
-            </div> */}
             
             <div className="bg-white p-6 rounded-xl shadow-sm border border-gray-100">
               <h3 className="text-xl font-display font-semibold mb-3">What kind of support will I receive?</h3>
               <p className="text-foreground/70">
-                Students receive mentorship from experienced developers, code reviews, career coaching, and lifetime access to our alumni network and resources.
+                Students receive mentorship from experienced mobile developers, code reviews, career coaching, and lifetime access to our alumni network.
               </p>
             </div>
 
             <div className="bg-white p-6 rounded-xl shadow-sm border border-gray-100">
-              <h3 className="text-xl font-display font-semibold mb-3">Does this course includes building projects?</h3>
+              <h3 className="text-xl font-display font-semibold mb-3">Do I need a Mac for development?</h3>
               <p className="text-foreground/70">
-                This course is heavely focused on project based learning where students will actively engage in building projects and solving real word problems.
+                While a Mac is required for iOS development, Android development can be done on Windows, Mac, or Linux. Our course focuses primarily on Android with React Native.
               </p>
             </div>
           </div>

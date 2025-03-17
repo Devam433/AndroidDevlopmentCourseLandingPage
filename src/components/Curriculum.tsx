@@ -11,91 +11,75 @@ import {
   Code, 
   Layers, 
   Database, 
-  Globe, 
-  Shield 
+  Smartphone, 
+  Zap
 } from "lucide-react";
 import { useEffect } from "react";
 
 const modules = [
   {
     id: "fundamentals",
-    title: "Web Fundamentals",
+    title: "React Native Fundamentals",
     icon: <BookOpen className="h-5 w-5" />,
-    weeks: "Weeks 1-2",
-    description: "Build a strong foundation with core web technologies",
+    weeks: "Weeks 1-3",
+    description: "Build a strong foundation with core React Native concepts",
     topics: [
-      "HTML5 Semantic Structure",
-      "CSS3 & Modern Layout Techniques",
-      "JavaScript Fundamentals & ES6+",
-      "Responsive Design Principles",
-      "Web Accessibility Standards",
-      "Version Control with Git"
+      "JavaScript & React Fundamentals",
+      "Setting up React Native Environment",
+      "Components & JSX",
+      "Props & State Management",
+      "Styling with Flexbox & StyleSheet",
+      "Handling User Input & Events"
     ]
   },
   {
-    id: "frontend",
-    title: "Frontend Development",
+    id: "ui",
+    title: "UI Development",
     icon: <Layers className="h-5 w-5" />,
-    weeks: "Weeks 3-5",
-    description: "Create dynamic and interactive user interfaces",
+    weeks: "Weeks 4-6",
+    description: "Create beautiful and responsive mobile interfaces",
     topics: [
-      "React Component Architecture",
-      "State Management Solutions",
-      "Client-Side Routing",
-      "CSS-in-JS & Styled Components",
-      "Hooks & Custom Hooks",
-      "Performance Optimization",
-      "Testing React Applications"
+      "Core & Custom Components",
+      "Navigation & Routing",
+      "Animations & Transitions",
+      "Responsive Layouts",
+      "UI Libraries (React Native Paper, UI Kitten)",
+      "Custom Theming & Styling",
+      "Testing UI Components"
+    ]
+  },
+  {
+    id: "native",
+    title: "Native Features",
+    icon: <Smartphone className="h-5 w-5" />,
+    weeks: "Weeks 7-9",
+    description: "Integrate device hardware and native capabilities",
+    topics: [
+      "Camera & Image Picker",
+      "Geolocation & Maps",
+      "Push Notifications",
+      "Local Storage & AsyncStorage",
+      "Device Sensors & Hardware",
+      "Native Modules & Bridges",
+      "Background Services"
     ]
   },
   {
     id: "backend",
-    title: "Backend Development",
-    icon: <Code className="h-5 w-5" />,
-    weeks: "Weeks 6-8",
-    description: "Build powerful server-side applications",
+    title: "Backend Integration",
+    icon: <Database className="h-5 w-5" />,
+    weeks: "Weeks 10-12",
+    description: "Connect your app to backend services and APIs",
     topics: [
-      "Node.js Fundamentals",
-      "Express.js Framework",
-      "RESTful API Design",
+      "RESTful API Integration",
+      "GraphQL with Apollo Client",
+      "Firebase & Firestore",
       "Authentication & Authorization",
-      "Error Handling & Logging",
-      "Middleware Implementation",
-      "API Documentation"
+      "File Uploads & Storage",
+      "Real-time Data with WebSockets",
+      "Offline Support & Data Syncing"
     ]
   },
-  // {
-  //   id: "database",
-  //   title: "Database Integration",
-  //   icon: <Database className="h-5 w-5" />,
-  //   weeks: "Weeks 9-10",
-  //   description: "Master data storage and retrieval techniques",
-  //   topics: [
-  //     "Database Design Principles",
-  //     "SQL Fundamentals with PostgreSQL",
-  //     "NoSQL with MongoDB",
-  //     "ORM/ODM Tools",
-  //     "Data Modeling & Relationships",
-  //     "Performance Optimization",
-  //     "Data Validation & Sanitization"
-  //   ]
-  // },
-  // {
-  //   id: "deployment",
-  //   title: "Deployment & Beyond",
-  //   icon: <Globe className="h-5 w-5" />,
-  //   weeks: "Weeks 11-12",
-  //   description: "Take your applications to production",
-  //   topics: [
-  //     "CI/CD Pipelines",
-  //     "Cloud Deployment (AWS/Vercel)",
-  //     "Containerization with Docker",
-  //     "Monitoring & Logging",
-  //     "Security Best Practices",
-  //     "Performance Optimization",
-  //     "Final Project Implementation"
-  //   ]
-  // },
 ];
 
 const Curriculum = () => {
@@ -125,10 +109,10 @@ const Curriculum = () => {
         <div className="text-center mb-16 space-y-4">
           <div className="inline-flex items-center px-4 py-2 bg-celestial/10 text-celestial rounded-full text-sm font-medium animate-on-scroll">
             <BookOpen className="mr-2 h-4 w-4" />
-            12-Week Program
+            16-Week Program
           </div>
           <h2 className="text-3xl md:text-4xl font-display font-bold animate-on-scroll">
-            A <span className="text-celestial">Structured Path</span> to Web Development Mastery
+            A <span className="text-celestial">Structured Path</span> to Android Development Mastery
           </h2>
           <p className="text-lg text-foreground/70 max-w-2xl mx-auto animate-on-scroll">
             Our curriculum is carefully designed to take you from beginner to professional through hands-on projects and real-world applications.
@@ -183,13 +167,13 @@ const Curriculum = () => {
                         <div className="bg-gray-50 p-4 rounded-lg">
                           <div className="font-medium text-resolution">Individual Project</div>
                           <p className="text-sm text-foreground/70 mt-1">
-                            Apply module concepts through solo development challenges
+                            Build a functional app component using module concepts
                           </p>
                         </div>
                         <div className="bg-gray-50 p-4 rounded-lg">
                           <div className="font-medium text-resolution">Team Assignment</div>
                           <p className="text-sm text-foreground/70 mt-1">
-                            Collaborate with peers on complex, real-world scenarios
+                            Collaborate on a mini-app with integrated features
                           </p>
                         </div>
                       </div>

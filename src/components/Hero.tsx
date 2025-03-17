@@ -1,6 +1,6 @@
 
 import { Button } from "@/components/ui/button";
-import { ArrowRight, Code, Monitor, Server } from "lucide-react";
+import { ArrowRight, Smartphone, Code, Layers } from "lucide-react";
 import { useEffect, useRef } from "react";
 
 const Hero = () => {
@@ -46,11 +46,11 @@ const Hero = () => {
           </div>
           
           <h1 className="text-4xl md:text-5xl lg:text-6xl font-display font-bold leading-tight animate-on-scroll text-balance">
-            Master <span className="text-celestial">Web Development</span> from Fundamentals to Full Stack
+            Master <span className="text-celestial">Android Development</span> with React Native
           </h1>
           
           <p className="text-lg md:text-xl text-foreground/80 animate-on-scroll max-w-xl text-balance">
-            Join our comprehensive course designed by experts to build professional, responsive web applications that stand out.
+            Join our comprehensive course designed by industry experts to build professional, cross-platform mobile applications for Android devices.
           </p>
           
           <div className="flex flex-wrap gap-4 animate-on-scroll">
@@ -64,11 +64,11 @@ const Hero = () => {
           
           <div className="pt-4 grid grid-cols-3 gap-4 animate-on-scroll">
             <div className="text-center">
-              <div className="font-bold text-3xl text-resolution">24</div>
+              <div className="font-bold text-3xl text-resolution">16</div>
               <div className="text-sm text-foreground/70">Weeks</div>
             </div>
             <div className="text-center">
-              <div className="font-bold text-3xl text-resolution">36</div>
+              <div className="font-bold text-3xl text-resolution">24</div>
               <div className="text-sm text-foreground/70">Projects</div>
             </div>
             <div className="text-center">
@@ -85,27 +85,61 @@ const Hero = () => {
               <div className="w-3 h-3 rounded-full bg-red-500"></div>
               <div className="w-3 h-3 rounded-full bg-yellow-500"></div>
               <div className="w-3 h-3 rounded-full bg-green-500"></div>
-              <div className="ml-4 text-sm font-mono text-foreground/70">index.html</div>
+              <div className="ml-4 text-sm font-mono text-foreground/70">App.js</div>
             </div>
             
             <pre className="text-sm font-mono text-left overflow-x-auto p-4 bg-gray-50 rounded-lg">
-              <code className="language-html text-resolution">
-{`<!DOCTYPE html>
-<html lang="en">
-<head>
-  <meta charset="UTF-8">
-  <meta name="viewport" 
-    content="width=device-width, initial-scale=1.0">
-  <title>My Web App</title>
-  <link rel="stylesheet" href="styles.css">
-</head>
-<body>
-  <div id="app">
-    <h1>Hello, <span class="highlight">World!</span></h1>
-  </div>
-  <script src="app.js"></script>
-</body>
-</html>`}
+              <code className="language-jsx text-resolution">
+{`import React from 'react';
+import { 
+  View, 
+  Text, 
+  StyleSheet,
+  TouchableOpacity 
+} from 'react-native';
+
+const App = () => {
+  return (
+    <View style={styles.container}>
+      <Text style={styles.title}>
+        Hello, <Text style={styles.highlight}>
+          React Native!
+        </Text>
+      </Text>
+      <TouchableOpacity style={styles.button}>
+        <Text style={styles.buttonText}>
+          Get Started
+        </Text>
+      </TouchableOpacity>
+    </View>
+  );
+};
+
+const styles = StyleSheet.create({
+  container: {
+    flex: 1,
+    alignItems: 'center',
+    justifyContent: 'center',
+  },
+  title: {
+    fontSize: 24,
+    fontWeight: 'bold',
+  },
+  highlight: {
+    color: '#1598F2',
+  },
+  button: {
+    marginTop: 20,
+    backgroundColor: '#1598F2',
+    padding: 15,
+    borderRadius: 8,
+  },
+  buttonText: {
+    color: 'white',
+  }
+});
+
+export default App;`}
               </code>
             </pre>
           </div>
@@ -115,10 +149,10 @@ const Hero = () => {
               <Code className="h-8 w-8 text-celestial" />
             </div>
             <div className="absolute top-20 -right-12 p-5 bg-white shadow-lg rounded-lg">
-              <Monitor className="h-7 w-7 text-ruddy" />
+              <Smartphone className="h-7 w-7 text-ruddy" />
             </div>
             <div className="absolute -bottom-14 left-20 p-5 bg-white shadow-lg rounded-lg">
-              <Server className="h-7 w-7 text-resolution" />
+              <Layers className="h-7 w-7 text-resolution" />
             </div>
           </div>
         </div>
