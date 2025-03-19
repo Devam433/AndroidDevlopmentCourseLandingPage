@@ -54,17 +54,33 @@ const Hero = () => {
           </p>
           
           <div className="flex flex-wrap gap-4 animate-on-scroll">
-            <Button size="lg" className="bg-celestial hover:bg-celestial/90 text-white">
+            <Button size="lg" className="bg-celestial hover:bg-celestial/90 text-white"
+            
+            onClick={() => {
+              const contactSection = document.getElementById("contactUs");
+              if (contactSection) {
+                contactSection.scrollIntoView({ behavior: "smooth" });
+              }
+            }}
+            >
               Enroll Now <ArrowRight className="ml-2 h-4 w-4" />
             </Button>
-            <Button size="lg" variant="outline" className="border-celestial text-celestial hover:bg-celestial/10">
+            <Button size="lg" variant="outline" className="border-celestial text-celestial hover:bg-celestial/10"
+            
+            onClick={() => {
+              const contactSection = document.getElementById("curriculum");
+              if (contactSection) {
+                contactSection.scrollIntoView({ behavior: "smooth" });
+              }
+            }}
+            >
               View Curriculum
             </Button>
           </div>
           
           <div className="pt-4 grid grid-cols-3 gap-4 animate-on-scroll">
             <div className="text-center">
-              <div className="font-bold text-3xl text-resolution">16</div>
+              <div className="font-bold text-3xl text-resolution">24</div>
               <div className="text-sm text-foreground/70">Weeks</div>
             </div>
             <div className="text-center">
@@ -114,30 +130,6 @@ const App = () => {
     </View>
   );
 };
-
-const styles = StyleSheet.create({
-  container: {
-    flex: 1,
-    alignItems: 'center',
-    justifyContent: 'center',
-  },
-  title: {
-    fontSize: 24,
-    fontWeight: 'bold',
-  },
-  highlight: {
-    color: '#1598F2',
-  },
-  button: {
-    marginTop: 20,
-    backgroundColor: '#1598F2',
-    padding: 15,
-    borderRadius: 8,
-  },
-  buttonText: {
-    color: 'white',
-  }
-});
 
 export default App;`}
               </code>

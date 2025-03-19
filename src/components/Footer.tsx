@@ -9,11 +9,14 @@ const Footer = () => {
       <div className="max-w-7xl mx-auto px-6 md:px-10 pt-16 pb-8">
         <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-4 gap-12 mb-16">
           <div>
-            <div className="flex items-center space-x-2 mb-6">
-              <div className="w-10 h-10 rounded-lg bg-gradient-to-br from-celestial to-white/30 flex items-center justify-center">
-                <span className="text-white font-bold text-xl">W</span>
-              </div>
-              <span className="text-xl font-display font-semibold">WebDevMaster</span>
+            <div className="flex items-center space-x-1 mb-6">
+              {/* <div className="w-10 h-10 rounded-lg bg-gradient-to-br from-celestial to-white/30 flex items-center justify-center"> */}
+              <div className="rounded-lg">
+            {/* <span className="text-white font-bold text-xl">SM</span> */}
+             <img src="LOGO.png" alt="Logo" className=" w-20" />
+            </div>
+              {/* </div> */}
+              <span className="text-xl font-display font-semibold">Smart Skills Academy</span>
             </div>
             <p className="text-white/80 mb-6">
               Empowering the next generation of web developers with industry-relevant skills and hands-on experience.

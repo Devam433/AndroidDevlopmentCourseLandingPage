@@ -31,7 +31,7 @@ const Navbar = () => {
   return (
     <header
       className={cn(
-        "fixed top-0 left-0 right-0 z-50 transition-all duration-300 px-6 md:px-10 py-4",
+        "fixed top-0 left-0 right-0 z-50 transition-all duration-300 px-6 md:px-10",
         isScrolled 
           ? "bg-white/90 backdrop-blur-md shadow-sm" 
           : "bg-transparent"
@@ -42,10 +42,13 @@ const Navbar = () => {
           href="#home" 
           className="flex items-center space-x-2 text-resolution hover:opacity-80 transition-opacity"
         >
-          <div className="w-10 h-10 rounded-lg bg-gradient-to-br from-celestial to-resolution flex items-center justify-center">
-            <span className="text-white font-bold text-xl">RN</span>
-          </div>
-          <span className="text-lg md:text-xl font-display font-semibold">ReactNativeAcademy</span>
+          {/* <div className="w-10 h-10 rounded-lg bg-gradient-to-br from-celestial to-resolution flex items-center justify-center"> */}
+          <div className="rounded-lg">
+            {/* <span className="text-white font-bold text-xl">SM</span> */}
+             <img src="LOGO.png" alt="Logo" className="w-20" />
+            </div>
+          {/* </div> */}
+          <span className="text-lg md:text-xl font-display font-semibold">Smart Skills Academy</span>
         </a>
 
         {/* Desktop Navigation */}
@@ -62,7 +65,15 @@ const Navbar = () => {
               </li>
             ))}
           </ul>
-          <Button className="bg-celestial hover:bg-celestial/90 text-white">
+          <Button className="bg-celestial hover:bg-celestial/90 text-white"
+          
+          onClick={() => {
+            const contactSection = document.getElementById("contactUs");
+            if (contactSection) {
+              contactSection.scrollIntoView({ behavior: "smooth" });
+            }
+          }}
+          >
             Enroll Now
           </Button>
         </nav>
